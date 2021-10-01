@@ -1,0 +1,173 @@
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+/* --- Theme style ---*/
+.theme-page{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+.theme-element-background{
+    background-color: #f7d8aa;
+}
+
+/* --- page header and nav ---*/
+.page-header{
+    margin: 15px o;
+    padding: 15px 15px 15px 15px;
+   
+}
+.page-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-element{
+    text-decoration: none;
+    color: #333333;
+}
+.navigation-element:hover{
+    opacity: 0.7;
+}
+/*--- product image ---*/
+.product-image{
+    max-width: 100%;
+
+}
+/*--offer text---*/
+.offer{
+    width: 80%;
+    height: 3.5rem;
+    margin: 2px auto 0;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 16px;
+}
+/*---- ingredients section ----*/
+.ingredients-section{
+    margin: 20px auto;
+    width: 80%;
+
+}
+.ingredients-heading{
+    margin-bottom: 5px;
+}
+.nutrition-table{
+    margin: 25px auto 40px;
+    width: 80%;
+    border: black 1px solid;
+}
+.nutrition-table-td{
+    text-align: right;
+}
+/*---- quality and cards -----*/
+.quality-section{
+    margin: 20px auto;
+    width: 80%;
+}
+.quality-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.quality-heading{
+   margin-bottom: 10px;
+   
+    
+}
+.card{
+    border: 1px solid black;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 30px;
+ 
+}
+.card-heading{
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+.card-content{
+    padding: 1px 16px;
+}
+.card-top-blue{
+    height: 44px;
+    background-color: #3354a5;
+    
+}
+.card-top-brown{
+    height: 44px;
+    background-color: #e3af66;
+}
+.card-top-grey{
+    height: 44px;
+    background-color: #ececec;
+}
+.card-top-lightbrown{
+    height: 44px;
+    background-color: #f7d8aa;
+}
+.some-image{
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15.625rem;
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+.page-footer-address{
+    margin-top: 5px;
+}
+
+
+
+@media only screen and (min-width: 37.5rem) {
+    .page-footer{
+        flex-direction: row;
+        height: 12.5rem;
+    }
+    .page-footer-section{
+        height: 8.75rem;
+    }
+    .quality-flexbox{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 53.438rem){
+    .ingredients-section, .quality-section {
+        width: 50%;
+    }
+    .page-navigation{
+        justify-content: flex-end;
+    }
+    .navigation-element{
+        margin-left: 15px;
+ 
+   }
+   .quality-flexbox{
+       justify-content: space-between;
+   }
+   .offer{
+       font-size: 1.7rem;
+       padding-top: 13px;
+   }
+   
+}
